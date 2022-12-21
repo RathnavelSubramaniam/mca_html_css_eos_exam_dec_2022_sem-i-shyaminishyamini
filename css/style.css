@@ -1,0 +1,145 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin:0;
+    }
+  
+  /* Style the header */
+  .header {
+    /*background-color: #f1f1f1;*/
+    padding: 3px;
+    text-align: left;
+    font-style: italic;
+    background-image:linear-gradient(to bottom, black 0%, #ff6600 100%);
+    width: 100%;
+    color: white;
+   
+  }
+  .navbar {
+    overflow: hidden;
+    background-color:black;
+    width: 100%;
+    padding: 0;
+    margin: 0%;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+    
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: wheat;
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: linear-gradient(to bottom, black 0%, #ff6600 100%);
+    width: 100%;;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  
+  
+  /*createate two equal columns that floats and recipes pages */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 600px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/* Create three equal columns that floats home page */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 600px; /* Should be removed. Only for demonstration */
+    color: black;
+    
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    color: black;
+  }
+  article h2 {
+    padding-top: 0;
+  }
+  article h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+  }
+  article img {
+    float: left;
+    margin: .5em 0 1em 1em;
+    border: 1px solid black;
+  }
+
+
+
+
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:gray;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to bottom, black 0%, #ff6600 100%);
+
+ } 
